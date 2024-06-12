@@ -12,6 +12,6 @@ spring:
         # 配置组，默认就是 DEFAULT_GROUP
         group: DEFAULT_GROUP
         # 配置命名空间，此处写的是 命名空间的id 的值，默认是 public 命名空间
-        # namespace:
+        namespace: 9f7c282e-0e20-400e-89df-55133ac51158
         # data-id 的前缀,默认就是 spring.application.name 的值
         prefix: gateway

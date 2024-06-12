@@ -1,9 +1,12 @@
 spring:
   cloud:
     nacos:
+      #服务的注册与发现
+      discovery:
+        server-addr: 47.119.168.151:8848
       config:
         # nacos 配置服务的地址，后面的端口不能省，即使是80端口
-        server-addr: localhost:8848
+        server-addr: 47.119.168.151:8848
         # 加载 dataid 配置文件的后缀，默认是 properties
         file-extension: yml
         # 配置组，默认就是 DEFAULT_GROUP
@@ -11,4 +14,4 @@ spring:
         # 配置命名空间，此处写的是 命名空间的id 的值，默认是 public 命名空间
         # namespace:
         # data-id 的前缀,默认就是 spring.application.name 的值
-        prefix: gateway
+        prefix: tgf-gateway

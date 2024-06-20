@@ -3,10 +3,14 @@ spring:
     nacos:
       #服务的注册与发现
       discovery:
-        server-addr: 47.119.168.151:8848
+        server-addr: localhost:8848
+        #用户名
+        username: nacos
+        #密码
+        password: nacos
       config:
         # nacos 配置服务的地址，后面的端口不能省，即使是80端口
-        server-addr: 47.119.168.151:8848
+        server-addr: localhost:8848
         # 加载 dataid 配置文件的后缀，默认是 properties
         file-extension: yml
         # 配置组，默认就是 DEFAULT_GROUP
@@ -15,3 +19,7 @@ spring:
         namespace: 9f7c282e-0e20-400e-89df-55133ac51158
         # data-id 的前缀,默认就是 spring.application.name 的值
         prefix: tgf-gateway
+        #用户名
+        username: nacos
+        #密码
+        password: nacos
